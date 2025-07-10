@@ -1,3 +1,3 @@
-var heading = document.firstElementChild.lastElementChild.querySelector("ul").lastElementChild
-heading.innerHTML = "Aidin"
+var heading = document.querySelector("li a")
+heading.innerHTML.color = red 
 document.querySelector("input").click()
