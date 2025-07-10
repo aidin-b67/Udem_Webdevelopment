@@ -1,3 +1,3 @@
-var heading = document.querySelector(".list a")
-heading.innerHTML.styyle.color = "red" 
+var heading = document.querySelector("li a")
+heading.innerHTML.style.color = "red" 
 document.querySelector("input").click()
