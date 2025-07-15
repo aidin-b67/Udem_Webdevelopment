@@ -59,7 +59,10 @@ function makeSound(key){
 
 };
 
-buttonAnimation(currentkey){
+function buttonAnimation(currentkey) {
  var activeButton = document.querySelector("." + currentkey);
  activeButton.classList.add("pressed");
+ setTimeout(() => {
+    activeButton.classList.remove("pressed")
+ }, 100);
 };
