@@ -1,0 +1,51 @@
+    
+   body{
+  background-image: url("./Universe\ Background.jpeg");
+  background-repeat:no-repeat;
+  background-size: 200vh;
+  background: opacity 50% ;
+   }
+
+   h1{
+    text-align: center;
+    margin: 20px;
+   }
+   .submit-form{
+      text-align: center;
+      padding: 100px;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-weight: bolder;
+
+      font-display: auto;
+    }
+    .dropdown {
+      position: relative; /*  Important for absolute positioning of dropdown content */
+      display: inline-block; /* Allows the dropdown to be inline with other elements */
+    }
+    
+    .dropdown-content {
+      display: none; /* Hidden by default */
+      position: absolute; /* Positioned relative to the dropdown container */
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1; /* Ensure it's above other elements */
+      bottom: 0; /* Position the top edge of the dropdown at the bottom of the container */
+      left: 0; /* Align the left edge of the dropdown with the left edge of the container */
+      transform: translateY(100%); /* Shift the dropdown down by its height */
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block; /* Show the dropdown on hover */
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
