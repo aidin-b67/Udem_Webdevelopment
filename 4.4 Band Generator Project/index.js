@@ -4,8 +4,6 @@ import bodyParser from "body-parser";
 const app = express();
 const port = 3000;
 
-app.use(express.static("public"));
-
 //Step 3 - Make the styling show up.
 //Hint 1: CSS files are static files!
 //Hint 2: The header and footer are partials.
@@ -18,26 +16,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
   //Step 1 - Make the get route work and render the index.ejs file.
-  res.render("index.ejs")
 });
 
 app.post("/submit", (req, res) => {
   //Step 2 - Make the generate name functionality work
   //Hint: When the "Generate Name" button in index.ejs is clicked, it should hit up this route.
   //Then:
-  var random_adj = Math.floor(Math.random()*(adj.length))
-  var random_noun = Math.floor(Math.random()*(noun.length))
-  var newBandname = noun[random_noun] + " " + adj [random_adj]
-  console.log(newBandname)
-  
-  
-  res.render("index.ejs", {bandNameGenerator : newBandname })
-  
-
-
-  
-
-
   //1. You should randomly pick an adjective from the const "adj" and a noun from const "noun",
   //scroll down to see the two arrays.
   //2. Send the index.ejs as a response and add the adjective and noun to the res.render
