@@ -35,14 +35,14 @@ h1 {
 .form {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 80px;
+  grid-template-columns: 0.5fr 0.5fr 80px;
   grid-column-gap: 10px;
 }
 .form-submit {
   outline: none;
   border: 1px solid rgb(232, 232, 232);
-  background-color: white;
-  border-radius: 5px;
+  background-color: black;
+  border-radius: 10px;
   cursor: pointer;
   font-family: monospace;
   font-size: 14px;
